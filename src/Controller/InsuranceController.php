@@ -26,4 +26,14 @@ class InsuranceController extends AbstractController
             'controller_name' => 'InsuranceController',
         ]);
     }
+    
+     /**
+     * @Route("/insurance/compare/makereferral", name="insurance_makereferral")
+     */
+    public function makereferral()
+    {
+        return $this->render('insurance/index.html.twig', [
+            'controller_name' => 'InsuranceController',
+        ]);
+    }
 }
