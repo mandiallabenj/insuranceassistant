@@ -16,4 +16,14 @@ class InsuranceController extends AbstractController
             'controller_name' => 'InsuranceController',
         ]);
     }
+    
+       /**
+     * @Route("/insurance/compare", name="insurance_compare")
+     */
+    public function compare()
+    {
+        return $this->render('insurance/index.html.twig', [
+            'controller_name' => 'InsuranceController',
+        ]);
+    }
 }
